@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+//#include<stdlib.h>
 int main()
 { 	//Jatupat Pannoi 5735512002
 	int x1,x2,y1,y2,man_dist;
