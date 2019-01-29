@@ -4,7 +4,7 @@ int main()
 {   
  	 char course1[] = "Physics I";
 	 char course2[] = "Math I";          
-     char course3[] = "Chemistry";   
+         char course3[] = "Chemistry";   
 	 char course4[] = "Intro to CPT";  
 	 char course5[] = "Table Tennis";   
 	             
@@ -19,20 +19,20 @@ int main()
 	 int num[]={1,2,3,4,5};
 	            
 	 printf("Enter grade(A-E) for each course\n");       
-	 printf("%d.%s\t: ",num[0],course1);      
+	 printf("%d.%s\n\tGrade\t: ",num[0],course1);      
 	 scanf("%c",&grade1);
 	 getchar();
-	 printf("%d.%s\t: ",num[1],course2);  
+	 printf("%d.%s\n\tGrade\t: ",num[1],course2);  
 	 scanf("%c",&grade2);
 	 getchar();
-	 printf("%d.%s\t: ",num[2],course3);  
+	 printf("%d.%s\n\tGrade\t: ",num[2],course3);  
 	 scanf("%c",&grade3);
 	 getchar();
-	 printf("%d.%s\t: ",num[3],course4);  
+	 printf("%d.%s\n\tGrade\t: ",num[3],course4);  
 	 scanf("%c",&grade4);
 	 getchar(); 
-	 printf("%d.%s\t: ",num[4],course5);  
-     scanf("%c",&grade5);
+	 printf("%d.%s\n\tGrade\t: ",num[4],course5);  
+         scanf("%c",&grade5);
 	 getchar();
     printf("---------------------------------------------------------");
     printf("\n \t\t GRADE REPORT\t\t\t\t|\n");     

@@ -1,13 +1,20 @@
 #include <stdio.h> 
+#include<stdlib.h>
 #include <math.h> 
 int main()  
 {     
- 	int num,pos;     
+ 	int num,pos,tmp;
+        double cal;
+        
+          
 	printf("Please enter a number (6 digits): ");     
 	scanf ("%d",&num);     
 	printf("Please select the position (1-6): ");     
 	scanf ("%d",&pos);           
-	printf("The digit is %d\n",num/(int)pow(10,pos-1)%10);         
+	//tmp=pos-1;
+        cal=pow(10,pos);
+
+        printf("The digit is %f\n",cal);         
 	
 	return 0;    
 }
