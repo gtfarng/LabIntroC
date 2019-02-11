@@ -4,6 +4,7 @@ int main()
 	int Dido[5];
 	float Fifa[3]={4.5,10.5,20.5};
 	int i=0;
+	float sum=0;
 	
 	printf("-Input-\n");
 	for(i=0;i<5;i++)
@@ -41,6 +42,19 @@ int main()
 	{
 		printf("In Array Dido[%d] = %d\n",i,Dido[i]);
 	}
+	
+	for(i=0;i<5;i++)
+	{
+		sum+=Dido[i];
+	}
+	
+	for(i=0;i<3;i++)
+	{
+		sum+=Fifa[i];
+	}
+	
+		printf("Average of Array Fifa And Array Dido = %.2f",sum/8);
+	
 	
 	return 0;
 }

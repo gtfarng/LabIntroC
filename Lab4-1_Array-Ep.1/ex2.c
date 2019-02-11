@@ -11,20 +11,20 @@ int main()
 	for(i=0;i<10;i++)
     { 
 	    if(min>Number[i])
-        { 
-            min=Number[i]; 
-        }
+           min=Number[i]; 
+        
     }
-	printf("Minimum Number = %d\n",min);
+	
 	max=Number[0];
     for(i=0;i<10;i++)
     {  
         if(max<Number[i])
-        { 
             max=Number[i]; 
-        }
+       
     
 	}
+	
+	printf("Minimum Number = %d\n",min);
 	printf("Maximum Number = %d\n",max);
 	
 
