@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<Math.h>
+#include<math.h>
 int main()
 {
     int n,i,j,a,b;
@@ -19,7 +19,7 @@ int main()
          	 printf("%d ",i);
         
  	}   
-  
+       printf("\n"); 
     
     return 0;
 }
