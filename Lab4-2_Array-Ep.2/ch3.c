@@ -1,105 +1,63 @@
 #include <stdio.h>
+#define MAX 10
+int main()
+{
+ 	int matA[MAX][MAX]={}; 
+ 	int matB[MAX][MAX]={}; 
+ 	int matC[MAX][MAX]={};
 
-#include <stdlib.h> 
+ 	int m,n,p,i,j;
+ 	
+ 	printf("Enter Number of M : ");
+ 	scanf("%d",&m);
+ 	printf("Enter Number of N : ");
+ 	scanf("%d",&n);
+ 	printf("Enter Number of P : ");
+ 	scanf("%d",&p);
+ 	
+ 	printf("\nEnter Matrix A\n");
+ 	
+ 	for (i=0; i<n; i++)
+ 	{
+ 	 for(j=0; j<m; j++)
+ 	{ 
+ 	  printf("matA(%d,%d): ",i+1,j+1);
+	  scanf("%d",&matA[i][j]);
+  	}
+ 	}
 
-#define MAX 10 
+ 	printf("\nEnter Matrix B\n");
+ 	for (i=0; i<m; i++)
+ 	{ 
+ 	for(j=0; j<p; j++) 
+ 	{
+ 	printf("matB(%d,%d): ",i+1,j+1);
+ 	scanf("%d",&matB[i][j]);	
+   
+ 	}
+ 	}
+        
+ 	printf("\nMatrix A\n");
+        for (i=0; i<n; i++)
+ 	{ 
+ 	for(j=0; j<m; j++) 
+ 		printf("%5d",matA[i][j]);
+ 	printf("\n");
+ 	}
 
-void showMatrix(int M[MAX][MAX], int m, int n); 
-
-void inputMatrix(int M[MAX][MAX], int m, int n);
-
-void addMatrix(int A[MAX][MAX],int B[MAX][MAX], int C[MAX][MAX], int m,int n);  
-
-void mutipiyMatrix( int A[MAX][MAX], int B[MAX][MAX],int m , int n , int p)
-
-int main() 
-
-{   int MatA[MAX][MAX]={}, MatB[MAX][MAX]={}, MatC[MAX][MAX]={}; 
-
-    int ra,rb,ca,cb; 
-
-    printf("Matrix A\n"); 
-
-    printf("Number of rows = ");   scanf("%d",&ra); 
-
-    printf("Number of columns = ");  scanf("%d",&ca); 
-
-    inputMatrix(MatA,ra,ca); 
-
-    showMatrix(MatA,ra,ca); 
-
-    printf("Matrix B\n"); 
-
-    printf("Number of rows = ");   scanf("%d",&rb); 
-
-    printf("Number of columns = ");  scanf("%d",&cb); 
-
-    inputMatrix(MatB,rb,cb); 
-
-    showMatrix(MatB,rb,cb); 
-
-    printf("Matrix C = A + B \n"); 
-
-    void addMatrix(int A[MAX][MAX],int B[MAX][MAX], int C[MAX][MAX], int m,int n); 
-
-    showMatrix(MatC,ra,ca); 
-
-    
-
-    return 0; 
-
+ 	printf("\nMatrix B\n");
+ 	for (i=0; i<m; i++)
+ 	{ 
+ 	for(j=0; j<p; j++) 
+ 		printf("%5d",matB[i][j]);
+ 	printf("\n");
+ 	}
+ 
+ 	printf("\nC(MxP) = A(MxN) X B(NxP) \n");
+ 	  	
+ 	printf("| %5d\t%5d\t%5d\t%5d |\n",matA[0][0]*matB[0][0]+matA[0][1]*matB[1][0],matA[0][0]*matB[0][1]+matA[0][1]*matB[1][1],matA[0][0]*matB[0][2]+matA[0][1]*matB[1][2],matA[0][0]*matB[0][3]+matA[0][1]*matB[1][3]);
+ 	printf("| %5d\t%5d\t%5d\t%5d |\n",matA[1][0]*matB[0][0]+matA[1][1]*matB[1][0],matA[1][0]*matB[0][1]+matA[1][1]*matB[1][1],matA[1][0]*matB[0][2]+matA[1][1]*matB[1][2],matA[1][0]*matB[0][3]+matA[1][1]*matB[1][3]);
+ 	printf("| %5d\t%5d\t%5d\t%5d |\n",matA[2][0]*matB[0][0]+matA[2][1]*matB[1][0],matA[2][0]*matB[0][1]+matA[2][1]*matB[1][1],matA[2][0]*matB[0][2]+matA[2][1]*matB[1][2],matA[2][0]*matB[0][3]+matA[2][1]*matB[1][3]);
+ 	
+ 	return 0;
 }
-
-// Show elements of Matrix M(m x n) 
-
-void showMatrix(int M[MAX][MAX], int m, int n) 
-
-{ int i,j; 
-
-  for (i=0; i<m; i++) 
-
-  {  for(j=0; j<n; j++) printf("%5d",M[i][j]); 
-
-     printf("\n"); 
-
-  } 
-
-} 
-
-// Input elements of Matrix M(m x n) 
-
-void inputMatrix(int M[MAX][MAX], int m, int n) 
-
-{ int i,j; 
-
-  for (i=0; i<m; i++) 
-
-  {  for(j=0; j<n; j++) 
-
-       { printf("M(%d,%d)=",i+1,j+1); 
-
-         scanf("%d",&M[i][j]); 
-
-       } 
-
-  } 
-
-} 
-
-// Matrix C = A + B  
-
-void addMatrix(int A[MAX][MAX],int B[MAX][MAX], int C[MAX][MAX], int m,int n); 
-
-{  int i,j; 
-
-  for (i=0; i<m; i++) 
-
-  {  for(j=0; j<n; j++) C[i][j]=A[i][j]+B[i][j]; 
-
-  } 
-
-} 
-
-//Matrix c= A x B
-
-

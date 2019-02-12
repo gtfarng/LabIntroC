@@ -24,7 +24,7 @@ int main()
 	  scanf("%d",&matA[i][j]);
   	}
  	}
-
+ 	printf("\nMatrix A\n");
  	// Show elements of Matrix A(ra x ca)
  	for (i=0; i<ra; i++)
  	{ 
@@ -49,6 +49,7 @@ int main()
  	}
  	}
 
+ 	printf("\nMatrix B\n");
  	// Show elements of Matrix B(rb x cb)
  	for (i=0; i<rb; i++)
  	{
@@ -57,7 +58,7 @@ int main()
  	printf("\n");
  	} 	
 
- 	printf("Matrix C = A + B \n");
+ 	printf("\nMatrix C = A X B \n");
 
  	// Addition: Matrix C = A + B
  	for (i=0; i<ra; i++)
