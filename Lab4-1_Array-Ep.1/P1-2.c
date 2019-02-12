@@ -53,7 +53,7 @@ int main()
 		sum+=Fifa[i];
 	}
 	
-		printf("Average of Array Fifa And Array Dido = %.2f",sum/8);
+		printf("Average of Array Fifa And Array Dido = %.2f\n",sum/8);
 	
 	
 	return 0;

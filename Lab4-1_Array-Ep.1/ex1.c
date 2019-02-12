@@ -11,7 +11,7 @@ int main()
 		scanf("%d",&Score[i]);
 	}
 	
-	printf("Sum of Score = %d",sum(Score));
+	printf("Sum of Score = %d\n",sum(Score));
 		
 	return 0;
 }
