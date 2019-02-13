@@ -54,10 +54,26 @@ int main()
  	}
  
  	printf("\nC(MxP) = A(MxN) X B(NxP) \n");
- 	  	
+ 	
+	 for(i=0;i<n;i++)
+	{  for(j=0;j<p;j++)
+	   {
+	   	  matC[i][j]=(matA[i][0]*matB[0][j])+(matA[i][1]*matB[1][j]);
+	   }
+	}
+    
+	printf("\nMatrix C (m X p) = Matrix A(m X n) X Matrix B(n X p)\n\n");
+	for(i=0;i<n;i++)
+	{  for(j=0;j<p;j++)
+	   {
+	   	  printf("%-4d",matC[i][j]);
+	   }
+	   printf("\n");
+	}	
+	/*  	
  	printf("| %5d\t%5d\t%5d\t%5d |\n",matA[0][0]*matB[0][0]+matA[0][1]*matB[1][0],matA[0][0]*matB[0][1]+matA[0][1]*matB[1][1],matA[0][0]*matB[0][2]+matA[0][1]*matB[1][2],matA[0][0]*matB[0][3]+matA[0][1]*matB[1][3]);
  	printf("| %5d\t%5d\t%5d\t%5d |\n",matA[1][0]*matB[0][0]+matA[1][1]*matB[1][0],matA[1][0]*matB[0][1]+matA[1][1]*matB[1][1],matA[1][0]*matB[0][2]+matA[1][1]*matB[1][2],matA[1][0]*matB[0][3]+matA[1][1]*matB[1][3]);
  	printf("| %5d\t%5d\t%5d\t%5d |\n",matA[2][0]*matB[0][0]+matA[2][1]*matB[1][0],matA[2][0]*matB[0][1]+matA[2][1]*matB[1][1],matA[2][0]*matB[0][2]+matA[2][1]*matB[1][2],matA[2][0]*matB[0][3]+matA[2][1]*matB[1][3]);
- 	
+ 	*/
  	return 0;
 }
