@@ -53,7 +53,7 @@ int main()
  	printf("\n");
  	}
  
- 	printf("\nC(MxP) = A(MxN) X B(NxP) \n");
+// 	printf("\nC(MxP) = A(MxN) X B(NxP) \n");
  	
 	 for(i=0;i<n;i++)
 	{  for(j=0;j<p;j++)
