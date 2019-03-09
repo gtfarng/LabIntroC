@@ -2,7 +2,7 @@
 #include<Math.h>
 int main()
 {
-    int n,i,j,a,b;
+    int n,i,j,a,b,count=0;
    	printf("Enter Number :");
 	scanf("%d",&n);
    	printf("Prime Number :");
@@ -16,10 +16,14 @@ int main()
 		b = b&&!(i%j==0);          
         }
         	if(b==1)
-         	 printf("%d ",i);
+        	{
+        		 printf("%d ",i);
+        		 count++;
+			}
+         	
         
  	}   
   
-    
+    printf("\nTotal prime number 2 to %d = %d ",n,count);
     return 0;
 }
