@@ -11,7 +11,7 @@ void main(void)
 	
 	printf("Area of rectangle = %.2f\n",(float)calArea(width,length));
 
-	system("PAUSE");
+	//system("PAUSE");
 	//getch();
 } 
 
