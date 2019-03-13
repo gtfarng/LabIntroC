@@ -24,8 +24,7 @@ int main()
   	x=var1.re - 1;
 
  	var2=cconst(x, var1.im);
- 	printf("Var2 is Var1.re - 1,Var1.im [x=%7.2lf, y=%7.2lf]\n",var2.re,                                                      
-                                                       var2.im);
+ 	printf("Var2 is Var1.re - 1,Var1.im [x=%7.2lf, y=%7.2lf]\n",var2.re,var2.im);
  	printf("\n");
 	var3=cadd(var1, var2);
  	printf("Value of Var1 + Var2 [x=%7.2lf, y=%7.2lf]\n",var3.re, var3.im);
