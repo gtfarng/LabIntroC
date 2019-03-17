@@ -17,7 +17,7 @@ int main()
 	scanf("%d",&y);
 	
 	ans=Get_Fxy(x,y);
-	printf("f(%d,%d) = %d",x,y,ans);
+	printf("f(%d,%d) = %d\n",x,y,ans);
 	
 	return 0;
 }

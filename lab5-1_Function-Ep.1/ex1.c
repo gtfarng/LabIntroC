@@ -15,7 +15,7 @@ int main()
 	scanf("%d",&x);
 	
 	ans=Get_Fx(x);
-	printf("f(%d) = %d",x,ans);
+	printf("f(%d) = %d\n",x,ans);
 	
 	return 0;
 }

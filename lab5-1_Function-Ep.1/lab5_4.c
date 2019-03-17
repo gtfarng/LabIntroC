@@ -14,7 +14,7 @@ void main(void)
 	x1=addvalue(-3, addvalue(5,addvalue(addvalue(12,4),-23))); 
 	printf("-3 + 5 + 12 + 4 – 23 = %d\n", x1); 
 	
-	system("PAUSE");
+//	system("PAUSE");
 	//getch();
 } 
 

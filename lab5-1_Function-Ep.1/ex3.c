@@ -11,7 +11,7 @@ int main()
 	scanf("%f",&h);
 	
 	ans=calCylinder(PI,d,h);
-	printf("Cylinder volume (d= %.2f cm., h= %.2f cm.) = %.2f cm^3",d,h,ans);
+	printf("Cylinder volume (d= %.2f cm., h= %.2f cm.) = %.2f cm^3\n",d,h,ans);
 	
 	return 0;
 }
