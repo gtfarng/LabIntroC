@@ -6,7 +6,7 @@ void main()
 	myfunc();
 	printf("Hello, after calling myfunc()\n");
 	
-	system("PAUSE");
+//	system("PAUSE");
 
 }
 void myfunc() 

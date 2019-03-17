@@ -15,7 +15,7 @@ void main()
 	scanf("%d", &second); 
 	get_Fx(second);
 	
-	system("PAUSE");
+//	system("PAUSE");
 //	getch(); 
 
 } 

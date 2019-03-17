@@ -18,7 +18,7 @@ int main()
 	printf("a^b = %d\n",(int)powAB);
 	printf("x^(1/2) = %.2f\n",sqrtX);
 	
-	system("PAUSE");
+	//system("PAUSE");
 	
 	return 0;
 }
