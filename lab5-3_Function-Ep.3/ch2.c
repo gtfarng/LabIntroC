@@ -25,7 +25,7 @@ void replaceStr(char str[],char c1, char c2)
 	 	if (str[i]==c1) 
 		  	str[i]=c2;	
 			  
-	printf("After: str1= \"%s\" ",str);    	  	
+	printf("After: str1= \"%s\" \n",str);    	  	
 	
 }
  

@@ -12,11 +12,11 @@ int main()
 	gets(str2); 
 	
 	if((strcmp(str1,str2))==-1)
-	 	printf("\"%s\" comes before \"%s\" ",str1,str2);
+	 	printf("\"%s\" comes before \"%s\" \n",str1,str2);
 	else if((strcmp(str1,str2))==1)
-	 	printf("\"%s\" comes after \"%s\" ",str1,str2);
-	
-	
+	 	printf("\"%s\" comes after \"%s\" \n",str1,str2);
+	else
+                printf("\"%s\" comes before \"%s\" \n",str1,str2);	
 		 
 	
 	return 0; 
